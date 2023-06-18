@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code-Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="score.html">View High Scores</a>
+        <p id="timecounter">Timer:<span id="timer"> 0</span></p>
+    </header>
+    
+    <main>
+        <div class="btnstart"> 
+            <h1 id="btnstart_tittle">Coding Quiz Challenge</h1>
+            <p id="info">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 15 seconds.
+            </p>
+            <button class="btn" id="btn-start">Start Quiz</button>
+        </div>
+            
+        <div class="quiz-questions hide" id="quiz-questions">
+            <h2 class="text-info" id="question-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+            <div class="answers" id="question-answers"></div>
+            <h1 id="alert"></h1>
+        </div>
+
+        <div class="hide" id="addscore">
+            <div class="quiz-score-info">   
+                <h1>All Done!</h1>
+                <p>Your final score is: <span id="final-score"></span></p>
+            </div>
+            <div class="quiz-score-initials">    
+                <p><span id="score">Enter Initials:</span></p>
+                <input type="text" class="form-control" id="inputScore">
+                <button id="btnScore">Submit</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src=""></script>
+    <script src="assets/javascript/scrypt.js"></script>
+
+</body>
+
+</html>
