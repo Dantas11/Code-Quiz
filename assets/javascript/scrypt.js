@@ -17,10 +17,11 @@ var score = 0;
 var count = 75;
 
 var allScores = [];
+//The JSON.parse() static method parses a JSON string, constructing the JavaScript value or object described by the string.
 var storedScores = JSON.parse(localStorage.getItem("userData"));
 
 
-
+//The addEventListener() method allows you to add event listeners on any HTML DOM object such as HTML elements.
 btnStart.addEventListener("click", starQuiz);
 function starQuiz() {
     if (storedScores !== null) {
@@ -69,6 +70,8 @@ function scorePage(a, b) {
     location.href = "score.html";
 }
 
+//The document.createElement() method creates the HTML element specified by tagName.
+//The appendChild() method appends a node (element) as the last child of an element.
 function displayQuestion(question) {
     questionTitle.innerText = question.title;
     question.choices.forEach(element => {
@@ -113,6 +116,8 @@ function correction(response) {
     }, 1000);
 }
 
+//The getElementById() method is used almost every time you want to read or edit an HTML element.
+//The classList property is read-only, but you can use, to add, toggle or remove CSS classes from properties and methods.
 function endgame() {
     document.getElementById("final-score").textContent = count;
     addscore.classList.remove("hide");
