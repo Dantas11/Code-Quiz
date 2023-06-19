@@ -13,7 +13,7 @@ N/A
 
 ## Usage
 
-To use this website open the link [Project Website Link](https://dantas11.github.io/Password-Generator/)
+To use this website open the link [Project Website Link](https://dantas11.github.io/Code-Quiz/)
 
 ## Credits
 
