@@ -20,7 +20,7 @@ function displayScores() {
         }
         highScoresArea.appendChild(scoreList);
     }
-}
+};
 
 displayScores();
 
