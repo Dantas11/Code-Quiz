@@ -6,6 +6,9 @@ var clearBtn = document.querySelector("#clearScores");
 
 function displayScores() {
     if (storedScores !== null) {
+        storedScores.sort(function(a, b) {
+            return b.userScore - a.userScore;
+        });
         var scoreList = document.createElement("ol");
         scoreList.className = "scoreListClass";
         for (var i = 0; i < storedScores.length; i++) {
@@ -17,7 +20,7 @@ function displayScores() {
         }
         highScoresArea.appendChild(scoreList);
     }
-};
+}
 
 displayScores();
 
